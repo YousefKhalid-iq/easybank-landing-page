@@ -2,8 +2,11 @@ const toggleOn = document.querySelector(".toggle-on-cont");
 const active = document.querySelector(".menu-container");
 const toggleOff = document.querySelector(".toggle-off-cont");;
 const mobiles = document.querySelector(".mockups-img");
-const shadow = document.querySelector("*");
-const important = document.querySelector(".header-flex");
+const shadow = document.querySelector(".header-text-cont");
+const shadow2 = document.querySelector(".mockups-bg");
+const shadow3 = document.querySelector(".choose-section");
+const shadow4 = document.querySelector(".articles-section");
+const shadow5 = document.querySelector(".footer-section");
 
 toggleOn.addEventListener("click", function () {
 	active.classList.toggle("press");
@@ -43,12 +46,36 @@ toggleOn.addEventListener("click", function() {
 
 toggleOff.addEventListener("click", function() {
 	shadow.classList.toggle("shadow")
-})
+});
 
 toggleOn.addEventListener("click", function() {
-	important.classList.toggle("bright")
+	shadow2.classList.toggle("shadow2")
 });
 
 toggleOff.addEventListener("click", function() {
-	important.classList.toggle("bright")
+	shadow2.classList.toggle("shadow2")
+});
+
+toggleOn.addEventListener("click", function() {
+	shadow3.classList.toggle("shadow3")
+});
+
+toggleOff.addEventListener("click", function() {
+	shadow3.classList.toggle("shadow3")
+});
+
+toggleOn.addEventListener("click", function() {
+	shadow4.classList.toggle("shadow4")
+});
+
+toggleOff.addEventListener("click", function() {
+	shadow4.classList.toggle("shadow4")
+});
+
+toggleOn.addEventListener("click", function() {
+	shadow5.classList.toggle("shadow5")
+});
+
+toggleOff.addEventListener("click", function() {
+	shadow5.classList.toggle("shadow5")
 });
