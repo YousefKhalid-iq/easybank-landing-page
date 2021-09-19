@@ -127,6 +127,13 @@ body {
   text-decoration: none;
 }
 
+.menu-container a:hover {
+  cursor: pointer;
+  border-width: 0 0 4px 0;
+  border-style: solid;
+  border-color: hsl(136, 65%, 51%);
+}
+
 .nav-btn {
   display: none;
 }
@@ -185,6 +192,10 @@ h1 {
   color: hsl(0, 0%, 100%);
   border-radius: 2.5rem;
   font-size: 0.8rem;
+}
+
+.inv-btn button:hover {
+  opacity: 0.7;
 }
 
 .invis {
@@ -293,6 +304,13 @@ h1 {
   font-size: 1rem;
 }
 
+.article-head-p:hover {
+  background: -webkit-linear-gradient(hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   cursor: pointer;
+}
+
 .article-desc-p {
   text-align: left;
   color: hsl(233, 8%, 62%);
@@ -326,6 +344,15 @@ h1 {
   text-decoration: none;
 }
 
+.footer-socials a:hover {
+  filter: 
+    invert(0.17)
+    sepia(1)
+    hue-rotate(68.4deg)
+    saturate(6)
+    brightness(0.85);
+}
+
 .footer-links1 {
   text-align: center;
   padding: 6% 0;
@@ -341,6 +368,12 @@ h1 {
   font-weight: 300;
 }
 
+.footer-links1 a:hover {
+  background: -webkit-linear-gradient(hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .footer-links2 {
   text-align: center;
   margin-top: -6%;
@@ -354,6 +387,17 @@ h1 {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
   font-weight: 300;
+}
+
+.footer-links2 a:hover {
+  background: -webkit-linear-gradient(hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-btn-rights .inv-btn button:hover {
+  opacity: 1;
+  filter: brightness(125%);
 }
 
 .rights-para {
@@ -424,7 +468,7 @@ h1 {
   .menu-container a:hover {
     color: hsl(233, 26%, 24%);
     cursor: pointer;
-    border-width: 0 0 3px 0;
+    border-width: 0 0 4px 0;
     border-style: solid;
     border-color: hsl(136, 65%, 51%);
     padding-bottom: 6.3%;
@@ -456,6 +500,10 @@ h1 {
     color: hsl(0, 0%, 100%);
     border-radius: 2.5rem;
     font-size: 1rem;
+  }
+
+  .nav-btn button:hover {
+    opacity: 0.7;
   }
 
   .inv-btn {
@@ -658,7 +706,6 @@ h1 {
 
   .footer-btn-rights {
     width: 100%;
-
   }
 
   .footer-btn-rights .inv-btn {
@@ -668,10 +715,41 @@ h1 {
 
   .rights-para {
     text-align: right;
+    font-size: 0.9rem;
   }
 
   .attribution {
     padding: 5% 0;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .menu-container a:hover {
+    padding-bottom: 7%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .menu-container a:hover {
+    padding-bottom: 8%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .menu-container a:hover {
+    padding-bottom: 8.5%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .menu-container a:hover {
+    padding-bottom: 9%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .menu-container a:hover {
+    padding-bottom: 9.5%;
   }
 }
 
